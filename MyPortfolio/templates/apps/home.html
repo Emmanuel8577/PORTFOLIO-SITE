@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'apps/css/style.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>      
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <box-icon name='menu' id="main-icons" ></box-icon>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+<!-----------home design section------->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3> Hello, it's me </h3>
+        <h1> Emmanuel Adikwu</h1>
+        <h3>And i'm a <span class="multiple-text"></span></h3>
+        <p>I am a tech enthusiast with a relentless passion for innovation and problem-solving.
+        </p>
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+        <a href="http://127.0.0.1:8000/download/2/" class="btn">Download CV</a>
+    </div>
+        <div class="home-img">
+            <img src="{% static 'apps/images/Emmanuel.jpeg'  %}" alt="">
+        </div>
+</section>
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="{% static 'apps/images/AdikwuE.jpeg' %}" alt="">
+    </div>
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Full Stack Developer!</h3>
+        <p>I am a passionate and innovative tech enthusiast with a keen interest in problem-solving and 
+           a strong foundation in technology. With a background in Electrical and Electronics Engineering
+           from the Federal University of Agriculture Makurdi, Benue State, I have honed my skills in tackling
+           complex challenges with creativity and precision. My career objective is to leverage my technical expertise 
+           to excel in dynamic roles within the tech industry, contributing to cutting-edge projects that drive innovation 
+           and positive change. As a clear and effective communicator, I thrive in collaborative environments and am driven 
+           by a relentless eagerness to learn and adapt to new technologies. Outside of work, I enjoy coding, traveling, playing 
+           basketball, and exploring new music, always seeking opportunities for personal and professional growth.
+        </p>
+        <a href="#" class="btn">Read Me</a>
+    </div>
+</section>
+<section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code' ></i>
+            <h3>Web Development</h3>
+            <p>In the realm of web development, we are your trusted partners in crafting digital solutions 
+               that seamlessly blend functionality with aesthetics. Whether it's building responsive websites 
+               from scratch or revamping existing ones, we thrive on bringing your online presence to life. 
+               With expertise in HTML, CSS, JavaScript, Django, MYSQL DataBase and beyond, we ensure that your website not only looks 
+               stunning but also performs flawlessly across devices. From e-commerce platforms to content management 
+               systems, we tailor each project to meet your unique needs and exceed your expectations. With our passion 
+               for innovation and commitment to excellence, we deliver web solutions that leave a lasting impression.
+            </p>
+            <a href="#" class="btn">Read Me</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bxs-paint' ></i>
+            <h3>Graphic design</h3>
+            <p>In the realm of graphic design, we are the creative minds behind visually captivating experiences 
+                that resonate with your audience. From logo design to branding collateral, we infuse every project with 
+                innovation and originality, ensuring that your brand stands out in a crowded marketplace. With a keen eye 
+                for aesthetics and a commitment to storytelling, we transform your vision into compelling visuals that leave a 
+                lasting impression. Whether you need sleek designs for print materials or eye-catching graphics for your online 
+                platforms, we bring your ideas to life with style and sophistication. With our comprehensive approach to graphic design,
+                we are well-equipped to handle projects of any scale or complexity.
+            </p>
+            <a href="#" class="btn">Read Me</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-bar-chart-alt' ></i>
+            <h3>Digital Marketing</h3>
+            <p>When it comes to digital marketing, we are your strategic navigators in the vast online landscape. 
+               With a deep understanding of SEO, SEM, and social media marketing, we craft tailored strategies to 
+               amplify your brand's online visibility and drive tangible results. From targeted ad campaigns to engaging 
+               content creation, we leverage the latest digital tools and analytics to optimize your online presence and maximize your ROI.
+               Whether you're looking to expand your reach, boost conversions, or enhance customer engagement, we have the expertise and creativity
+               to elevate your digital marketing efforts to new heights.
+            </p>
+            <a href="#" class="btn">Read Me</a>
+        </div>
+    </div>
+</section>
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="{% static 'apps/images/Ecommerce.jpg'  %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>All Projects Designed will be uploaded here soon</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="{% static 'apps/images/digital_marketing.jpg'  %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Digital Marketing</h4>
+                <p>All Projects Designed will be uploaded here soon</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="{% static 'apps/images/api.jpg'  %}" alt="">
+            <div class="portfolio-layer">
+                <h4>API Design</h4>
+                <p>All Projects Designed will be uploaded here soon.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="{% static 'apps/images/Web_design.jpg'  %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Website Design</h4>
+                <p>All Projects Designed will be uploaded here soon.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="{% static 'apps/images/web_design2.jpg'  %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Website Design</h4>
+                <p>All Projects Designed will be uploaded here soon.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="{% static 'apps/images/website_design3.jpg'  %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Website Design</h4>
+                <p>All Projects Designed will be uploaded here soon.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+</section>
+<section class="contact" id="contact">
+    <h2 class="heading">Contact<span>Me!</span></h2>
+<form action="#" method="post">
+    {% csrf_token %}
+    <div class="input-box">
+        <input type="text" name="name" placeholder="Full name"> 
+        <input type="email" name="email" placeholder="Email Address"> 
+    </div>
+    <div class="input-box">
+        <input type="text" name="mobile" placeholder="Mobile number"> 
+        <input type="text" name="subject" placeholder="Email Subject"> 
+    </div>
+    <textarea name="description" id="" cols="30" rows="10" placeholder="Your Message"></textarea> 
+    <input type="submit" value="Send Message" class="btn">
+</form>
+</section>
+<footer class="footer">
+    <div class="footer-text">
+        <p>copyright &copy; 2024 by Great-Minds Technologies| All Right Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+</footer>
+<!----------Scroll reveal js-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!----------typed js------>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+<!-------Custom Js-->
+<script type="text/javascript" src="/MyPortfolio/static/apps/js/script.js"></script>
+<script src="{% static 'apps/js/script.js' %}"></script>
+
+
+</body>
+</html>
