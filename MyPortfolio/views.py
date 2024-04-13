@@ -6,7 +6,7 @@ from .models import Contact, Data
 
 
 
-def home(request):
+def index(request):
     if request.method == "POST":
         name = request.POST.get('name', '')  # Provide a default value if name is not present
         email = request.POST.get('email', '')  
@@ -17,7 +17,7 @@ def home(request):
         # Assuming 'Contact' is a model, create an instance and save it
         rc = Contact.objects.create(name=name, email=email, mobile=mobile, subject=subject, description=description)
 
-    return render(request, 'apps/home.html', locals())
+    return render(request, 'apps/index.html', locals())
 
 
 
