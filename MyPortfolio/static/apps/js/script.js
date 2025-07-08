@@ -46,7 +46,7 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Mobile App Developer', 'Full Stack Developer', 'Digital Marketer', 'CAC Expert'],
+    strings: ['Mobile App Developer', 'Full Stack Developer', 'Digital Marketer'],
     typedSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
